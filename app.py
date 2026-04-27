@@ -13,7 +13,7 @@ from reportlab.graphics import renderPDF
 # PAGE CONFIG
 # -------------------------------
 st.set_page_config(
-    page_title="RH Sticker Generator",
+    page_title="Aditya Sticker Generator",
     page_icon="🏷️",
     layout="centered"
 )
@@ -189,14 +189,14 @@ def generate_pdf(
             c.drawCentredString(
                 label_width/2,
                 label_height-0.45*cm,
-                "RAJESH HARDWARES PVT. LTD."
+                "Aditya Enterprises"
             )
 
             c.setFont("Times-Bold",7)
             c.drawCentredString(
                 label_width/2,
                 label_height-0.80*cm,
-                "PAN No: 604280039"
+                "PAN No: 604867492"
             )
 
             c.setFont("Times-Bold",8)
@@ -257,7 +257,7 @@ def generate_pdf(
 st.title("RH Sticker Generator")
 st.write(
     "Generate precision thermal labels for "
-    "**Rajesh Hardwares Pvt. Ltd.**"
+    "**Aditya Enterprises**"
 )
 
 st.download_button(
@@ -349,7 +349,7 @@ if uploaded_file:
             st.download_button(
                 "Download Labels PDF",
                 data=st.session_state["pdf_data"],
-                file_name="Rajesh_Hardwares_Labels.pdf",
+                file_name="Aditya_Labels.pdf",
                 mime="application/pdf"
             )
 
