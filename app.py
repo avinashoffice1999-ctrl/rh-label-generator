@@ -254,7 +254,7 @@ def generate_pdf(
 # UI
 # -------------------------------
 
-st.title("RH Sticker Generator")
+st.title("Aditya Sticker Generator")
 st.write(
     "Generate precision thermal labels for "
     "**Aditya Enterprises**"
